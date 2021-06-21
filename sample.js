@@ -111,20 +111,7 @@ function count(){
   const return_button = document.getElementById("return_button");
   const slider_value = document.getElementById("value");
   const slider_label = document.getElementById("value_label");
-  var test = new Vue({
-    el: "#test",
-    data: {
-	seenFlag: false
-    },
-    methods:{
-	mouseOverAction(){
-		this.seenFlag = true;
-	},
-	mouseLeaveAction(){
-		this.seenFlag = false;
-	}
-    }
-  })
+
   let range_value = function(slider_value,slider_label){
     return function(evt){
       slider_label.textContent = slider_value.value;
