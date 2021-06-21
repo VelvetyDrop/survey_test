@@ -7,21 +7,60 @@ html{
   background-color:rgba(255,255,255,0.6);
   background-blend-mode:lighten;
 }
+.main-grid{
+  display : grid;
+  grid-template-areas : 
+    "hyoudai hyoudai hyoudai hyoudai"
+    "question question question question"
+    ". btn1 btn2  ."
+    ". btn3 btn4  ."
+    ". . ret  sinkou";
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
 .btn {
   border-color     : blue;
   background-color : #0099FF;
   color            : white;
   font-size        : 20px;
-  width            : 220px;
-  height           : 40px;
+  height	   : 100px;
+  wigth 	   : 50px;
 }
 .btn:hover{
   color            : yellow;
   font-weight      : bold;
   background-color : #0022FF;
 }
-#hyoudai{
-  height           : 100px
+
+.btn-1{
+  grid-area: btn1;
+}
+.btn-2{
+  grid-area: btn2;
+}
+.btn-3{
+  grid-area: btn3;
+}
+.btn-4{
+  grid-area: btn4;
+}
+.hyoudai{
+  height           : 100px;
+  grid-area : hyoudai;
+}
+.question{
+ grid-area: question;
+}
+.sinkou{
+ grid-area : sinkou;
+}
+.ret{
+ grid-area: ret;
+ height: 30px;
+ width : 50px;
+ align: center;
 }
 span{
   background-color : 	#FFBBFF;
