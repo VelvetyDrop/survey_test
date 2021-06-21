@@ -1,0 +1,42 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 0 15px -6px #00000073;
+}
+table tr {
+  background-color: #fff;
+}
+table tbody tr:hover{
+  background-color: #fffae9;
+}
+table td {
+  padding: .35em 1em;
+  border-bottom: 1px solid #eee;
+}
+table thead th {
+    font-size: .85em;
+    padding: 1em;
+}
+table thead tr{
+  background-color: #FFC107;
+  color:#fff;
+}
+table tbody th {
+  text-align: center;
+  font-size: 20px;
+  width : 80%
+}
+#submit_button{
+  positon: relative;
+  left: 500px;
+}
+
+select{
+  width: 150px;
+}

@@ -1,0 +1,31 @@
+html{
+  background-image:url("https://spiritualism-japan.com/wp-content/uploads/2018/02/healing_healing_05.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+  background-color:rgba(255,255,255,0.6);
+  background-blend-mode:lighten;
+}
+.btn {
+  border-color     : blue;
+  background-color : #0099FF;
+  color            : white;
+  font-size        : 20px;
+  width            : 220px;
+  height           : 40px;
+}
+.btn:hover{
+  color            : yellow;
+  font-weight      : bold;
+  background-color : #0022FF;
+}
+#hyoudai{
+  height           : 100px
+}
+span{
+  background-color : 	#FFBBFF;
+}
+div.uk-container-center{
+  color: #000000;
+}
