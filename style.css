@@ -15,7 +15,7 @@ html{
     ". btn1 btn2  ."
     ". btn3 btn4  ."
     ". . ret  sinkou";
-  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
@@ -55,12 +55,16 @@ html{
 }
 .sinkou{
  grid-area : sinkou;
+ justify-self: center;
+ align-self: center;
 }
 .ret{
  grid-area: ret;
  height: 30px;
  width : 50px;
  align: center;
+ justify-self: right;
+ align-self: center;
 }
 span{
   background-color : 	#FFBBFF;
