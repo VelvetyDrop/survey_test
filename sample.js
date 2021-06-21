@@ -114,7 +114,7 @@ function count(){
   var test = new Vue({
     el: "#test",
     data: {
-	seenFlag: true
+	seenFlag: false
     },
     methods:{
 	mouseOverAction(){
