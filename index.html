@@ -26,18 +26,24 @@
 </head>
 
 <body>
- <div class="uk-container main-grid">
-  <h1 id = "hyoudai" class="hyoudai">test</h1>
-      <div id="js-question" class="uk-container-center question" role="alert" style="font-size:25px">
+ <div class="uk-container uk-container-center">
+  <h1 id = "hyoudai" class="uk-width-1-1" uk-grid>test</h1>
+      <div id="js-question" class="uk-width-1-1" role="alert" style="font-size:25px" uk-grid >
      A simple primary alert—check it out!
    </div>
-     <button type="button" class="btn btn-primary btn-1">Primary</button>
-     <button type="button" class="btn btn-primary btn-2">Primary</button>
-     <button type="button" class="btn btn-primary btn-3">Primary</button>
-     <button type="button" class="btn btn-primary btn-4">Primary</button>    
-   <button type="button" id="return_button" class="ret">戻る</button>
-   <p class="sinkou"><progress id="sinkoudo" value="0" max ="100">10%</progress>：<output id="pct">0</output>％</p>
-
+   <div class="uk-grid-collapse" uk-grid>
+     <button type="button" class="btn btn-primary uk-width-1-6">Primary</button>
+     <button type="button" class="btn btn-primary uk-width-1-6">Primary</button>
+   </div>
+   <div class="uk-grid-collapse" uk-grid>
+     <button type="button" class="btn btn-primary uk-width-1-6">Primary</button>
+     <button type="button" class="btn btn-primary uk-width-1-6">Primary</button>
+   </div>
+   <div uk-grid>
+   <div class="uk-width2-3"> </div>
+   <button type="button" id="return_button" class="uk-width-auto uk-align:center ">戻る</button>
+   <p class="uk-width-auto"><progress id="sinkoudo" value="0" max ="100">10%</progress>：<output id="pct">0</output>％</p>
+   </div>
  </div>
 <script src="sample.js"></script>
  </body>
