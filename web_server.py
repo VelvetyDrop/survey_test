@@ -1,5 +1,5 @@
-# Hello World program in Python
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from flask import Flask , render_template, request
 from sqlalchemy import *
 
@@ -23,7 +23,7 @@ def add_data(ID,data):
     # トランザクションを使うには
     with engine.begin() as t:
         r1 = t.execute("sql文")
-        t.execute('insert into 登録するDB values (:name, :age)', name=name, age=age)
+        t.execute('insert into 登録するtable名 values (:name, :age)', name=name, age=age)
         # ロールバックしたいとき
         # t.rollback()
     
