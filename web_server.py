@@ -43,7 +43,7 @@ def display_page():
     return render_template("index.html",hyoudai = hyoudai,question = question, answer = answer)
     
     
-@app.route("",methods=["POST"])
+@app.route("/result",methods=["POST"])
 def post():
     if request.method == "POST":
         ID     = request.form["id"]
